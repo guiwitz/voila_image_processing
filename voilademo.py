@@ -61,7 +61,7 @@ class Improc:
         self.file.observe(self.on_value_change, names='value')
         
         my_adress = next(list_running_servers())['base_url']
-        self.myHTML = ipw.HTML("""<a href="https://hub.gke.mybinder.org"""+my_adress+"""notebooks/image.tif">Download</a>""")
+        self.myHTML = ipw.HTML("""<a href="https://hub.gke.mybinder.org"""+my_adress+"""notebooks/image.tif" target="_blank">Download</a>""")
 
    
     def on_value_change(self, change):
