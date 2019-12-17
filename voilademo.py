@@ -52,7 +52,7 @@ class Improc:
         
         #create widgets
         self.file = ipw.FileUpload(multiple = True)
-        self.select_file = ipw.Select()
+        self.select_file = ipw.Select(options = self.files)
         self.sigma_slider = ipw.FloatSlider(min = sigma_min, max = sigma_max, continuous_update = False)
         self.out = ipw.Output()
 
