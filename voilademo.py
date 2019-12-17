@@ -7,7 +7,7 @@ from IPython.display import display, clear_output
 from notebook.notebookapp import list_running_servers
 
 
-import time
+import time, glob
 
 class Improc:
     
@@ -44,7 +44,7 @@ class Improc:
         """
         
         self.sigma = None
-        self.files = []
+        self.files = glob.glob("*.tif")
         self.current_file = None
         self.ax = None
         self.implot = None
